@@ -1,3 +1,238 @@
-body{
-    
+body {
+    margin: 0;
+}
+
+.page-content {
+    width: 100%;
+    margin: 0 auto;
+    background: #75e2e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(149, 153, 226) 0%, rgb(139, 198, 236) 100%);
+}
+
+.form-content {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+    margin: 95px 0;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-content .form-detail {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.form-content .form-detail h2 {
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 34px;
+    padding: 30px 60px 0px 60px;
+}
+
+.form-content .form-detail .form-gauche {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+}
+
+.form-content .form-detail .form-gauche h2 {
+    color: #2271dd;
+    font-weight: 600;
+}
+
+.form-content .form-detail .form-droit {
+    width: 100%;
+    background: #4835d4;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form-content .form-detail .form-droit h2 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.form-group {
+    display: flex;
+}
+
+.form-line {
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 60px;
+    padding-right: 50px;
+}
+
+.form-line-1 {
+    width: 50%;
+    padding: 0 12px 0 60px;
+}
+
+.form-line-2 {
+    width: 50%;
+    padding: 0 60px 0 12px;
+}
+
+.form-line-3 {
+    width: 73%;
+    padding: 0 12px 0 60px;
+}
+
+.form-line-4 {
+    width: 50%;
+    padding: 0 60px 0 12px;
+}
+
+.form-content .form-detail select,
+.form-content .form-detail input {
+    width: 100%;
+    padding: 11px 15px 15px 15px;
+    border: 1px solid transparent;
+    background: transparent;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+select {
+    position: relative;
+    cursor: pointer;
+}
+
+.form-gauche select {
+    color: #666;
+}
+
+.form-droit select {
+    color: #f2f2f2;
+}
+
+.form-gauche .select-btn {
+    color: #666;
+}
+
+.form-droit .select-btn {
+    color: #f2f2f2;
+}
+
+.form-line-4 .select-btn {
+    top: 20%;
+    right: 26%;
+}
+
+.form-line-2 .select-btn {
+    top: 20%;
+    right: 19%;
+}
+
+.form-gauche input {
+    color: #000;
+}
+
+.form-droit input {
+    color: #fff;
+}
+
+.form-content .form-detail .form-gauche input,
+.form-content .form-detail .form-gauche select {
+    border-bottom: 1px solid #ccc;
+}
+
+.form-content .form-detail .form-gauche input:focus,
+.form-content .form-detail .form-gauche select:focus {
+    border-bottom: 1px solid #999;
+}
+
+.form-content .form-detail .form-droit input,
+.form-content .form-detail .form-droit select {
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.form-content .form-detail .form-droit input:focus,
+.form-content .form-detail .form-droit select:focus {
+    border-bottom: 1px solid #ccc;
+}
+
+.form-droit select option {
+    background: #4835d4;
+}
+
+.form-checkbox-acceptance {
+    margin-top: 40px;
+    padding: 0 50px 0 60px;
+    position: relative;
+}
+
+.form-content .form-detail .form-checkbox-acceptance p {
+    color: #e5e5e5;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+}
+
+.form-content .form-detail .form-checkbox-acceptance p>input {
+    width: 30px;
+}
+
+.form-content .form-detail .form-checkbox-acceptance .text {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.form-droit .form-line-last {
+    padding-left: 60px;
+    margin: 44px 0 10px;
+}
+
+.form-content .form-detail .form-droit .register {
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 6px 17px 0px rgba(0, 0, 0, 0.15);
+    width: 180px;
+    border: none;
+    margin: 6px 0 50px 0px;
+    cursor: pointer;
+    color: #333;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.form-content .form-detail .form-droit .register:hover {
+    background: #ccc;
+}
+
+.form-content .form-detail .form-droit .form-line-last input {
+    padding: 12px;
+}
+
+.form-content .form-detail .form-gauche input::-webkit-input-placeholder {
+    color: #666;
+    font-size: 16px;
+}
+
+.form-content .form-detail .form-gauche input::-moz-placeholder,
+.form-content .form-detail .form-gauche input:-ms-input-placeholder,
+.form-content .form-detail .form-gauche input:-moz-placeholder {
+    color: #666;
+    font-size: 16px;
+}
+
+.form-content .form-detail .form-droit input::-webkit-input-placeholder {
+    color: #f2f2f2;
+    font-size: 16px;
+}
+
+.form-content .form-detail .form-droit input::-moz-placeholder,
+.form-content .form-detail .form-droit input:-ms-input-placeholder,
+.form-content .form-detail .form-droit input::-webkit-input-placeholder {
+    color: #f2f2f2;
+    font-size: 16px;
 }
