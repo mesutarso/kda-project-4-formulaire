@@ -23,6 +23,7 @@ body {
     margin: 95px 0;
     position: relative;
     font-family: 'Montserrat', sans-serif;
+    width: 70%;
 }
 
 .form-content .form-detail {
@@ -168,24 +169,29 @@ select {
     background: #4835d4;
 }
 
-.form-checkbox-acceptance {
+.form-radio {
     margin-top: 40px;
     padding: 0 50px 0 60px;
     position: relative;
 }
 
-.form-content .form-detail .form-checkbox-acceptance p {
+.form-content .form-detail .form-radio p {
     color: #e5e5e5;
     font-size: 14px;
     font-weight: 400;
     display: flex;
 }
 
-.form-content .form-detail .form-checkbox-acceptance p>input {
+.form-content .form-detail .form-radio p>input {
     width: 30px;
 }
 
-.form-content .form-detail .form-checkbox-acceptance .text {
+.form-content .form-detail .form-radio p>input[type=radio] {
+    color: #fff;
+    width: 40px;
+}
+
+.form-content .form-detail .form-radio .text {
     font-weight: 600;
     color: #fff;
     text-decoration: underline;
