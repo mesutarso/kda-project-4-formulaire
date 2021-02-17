@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+.text {
+    color: #fff;
+}
+
 .page-content {
     width: 100%;
     margin: 0 auto;
