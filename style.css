@@ -75,22 +75,22 @@ body {
 
 .form-line-1 {
     width: 50%;
-    padding: 0 12px 0 60px;
+    padding: 0 10px 0 50px;
 }
 
 .form-line-2 {
     width: 50%;
-    padding: 0 60px 0 12px;
+    padding: 0 50px 0 10px;
 }
 
 .form-line-3 {
     width: 73%;
-    padding: 0 12px 0 60px;
+    padding: 0 12px 0 50px;
 }
 
 .form-line-4 {
     width: 50%;
-    padding: 0 60px 0 12px;
+    padding: 0 50px 0 10px;
 }
 
 .form-content .form-detail select,
