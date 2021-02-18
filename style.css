@@ -188,7 +188,11 @@ select {
 
 .form-content .form-detail .form-radio p>input[type=radio] {
     color: #fff;
-    width: 40px;
+    width: 20px;
+}
+
+.form-radio p>input[type=radio]:checked {
+    color: #fff;
 }
 
 .form-content .form-detail .form-radio .text {
@@ -245,4 +249,65 @@ select {
 .form-content .form-detail .form-droit input::-webkit-input-placeholder {
     color: #f2f2f2;
     font-size: 16px;
+}
+
+.form-radio-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.form-radio-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 2px solid #eee;
+    border-radius: 50%;
+}
+
+.form-radio-label:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.form-radio-label input:checked~.checkmark {
+    background-color: #4835d4;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form-radio-label input:checked~.checkmark:after {
+    display: block;
+}
+
+.form-radio-label .checkmark:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
 }
