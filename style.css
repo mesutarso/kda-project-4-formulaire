@@ -1,5 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
+    background: #75e2e9;
+    overflow-x: hidden;
+    background-image: linear-gradient(to right, rgb(149, 153, 226) 0%, rgb(139, 198, 236) 100%);
 }
 
 .text {
@@ -7,13 +16,11 @@ body {
 }
 
 .page-content {
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
-    background: #75e2e9;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, rgb(149, 153, 226) 0%, rgb(139, 198, 236) 100%);
 }
 
 .form-content {
@@ -229,17 +236,13 @@ select {
     left: 0;
     height: 20px;
     width: 20px;
-    background-color: #eee;
-    border: 2px solid #eee;
+    background-color: transparent;
+    border: 2px solid white;
     border-radius: 50%;
 }
 
 .form-radio-label:hover input~.checkmark {
     background-color: #ccc;
-}
-
-.form-radio-label input:checked~.checkmark {
-    background-color: #4835d4;
 }
 
 .checkmark:after {
