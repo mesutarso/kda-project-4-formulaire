@@ -15,6 +15,10 @@ body {
     color: #fff;
 }
 
+.mt-2 {
+    margin-top: 2px;
+}
+
 .page-content {
     width: 100vw;
     margin: 0 auto;
